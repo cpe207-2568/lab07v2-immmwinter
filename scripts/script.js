@@ -86,7 +86,7 @@ submitBtn.onclick = () => {
   }
 
   // validate confirm password
-  if (confirmInput.value === passWordInput.value) {
+  if (confirmInput.value === passWordInput.value && confirmInput.value !== "") {
     confirmInput.classList.add("is-valid");
     isConfirmOK = true;
   } else {
